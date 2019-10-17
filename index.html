@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
 
     <title>Psychic Game</title>
 </head>
+
 <body>
-<div>
-<h1>Crystal Game</h1><br>
-</div>  
+    <div class="container">
+        <h1 class="header">Crystal Game</h1><br>
 
-<div>
+        
+        <div class="card" style="width: 18em;">
+            <div class="card-body" id="instructions">
+                 <div class="card-text">                    
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you <br> will add a specific amount of points to your total score</p>
+                    <p>You will win the game by matching your total score to the <br> random number, you lose the game if your total score goes <br> above the random number. </p>
+                    <p>The value of each crytal is hidden from you until you click on it,</p>
+                    <p>When the game restarts, the value of the crystals will change.</p>
+                 </div>
+            </div>
+        </div>
 
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/javascript/game.js"></script>
+ 
 
+        <div id="randomNum"></div>
+
+        <div class="totals">
+            <p id="win"> Wins: </p>
+            <p id="losses">Losses: </p>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <img id="cry1" src="assets/images/crystal-11.png" alt="crystal1">
+            </div>
+
+            <div class="col-md-3">
+                <img id="cry2"  src="assets/images/crystal-10.png" alt="crystal2">
+            </div>
+
+            <div class="col-md-3">
+                <img id="cry3"  src="assets/images/crystal-7.png" alt="crystal3">
+            </div>
+
+            <div class="col-md-3">
+                <img id="cry4"  src="assets/images/crystal-9.png" alt="crystal4">
+            </div>
+
+
+        </div>
+
+        <div class="totalScore">
+            <p>Your total score is: </p>
+        </div>
+
+        <div class="scoreDisplay"> </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>
