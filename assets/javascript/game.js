@@ -4,6 +4,30 @@ var losses = 0;
 var totalScore = 0;
 var scoreDisplay = 0;
 
+$("#wins").html(wins);
+$("#losses").html(losses);
+$("#scoreDisplay").html(scoreDisplay);
+$("#scoreDisplay").html(totalScore);
+
+//Functions created for win/lose. Will use later
+function won(){
+//Increases wins
+    wins++;
+//Alert letting player know they won
+    alert("You won!");
+//Displays wins
+    $("#wins").html(wins);
+//Restart game using functions below
+    restart();
+    };
+
+function lost(){
+    losses++;
+    alert("Sorry, you lose! Better luck next time..");
+    $("#losses").html(losses);
+    restart(); 
+    };
+
 //Seclects a random number between 19 - 120 
 var randomNum = Math.floor(Math.random() * 101 + 19);
 
@@ -15,67 +39,14 @@ var image2 = Math.floor(Math.random() * 11 + 1);
 var image3 = Math.floor(Math.random() * 11 + 1);
 var image4 = Math.floor(Math.random() * 11 + 1);
 
-$("#wins").text(wins);
-$("#losses").text(losses);
-$("#scoreDisplay").text(scoreDisplay);
+//Set up clicks for 4 crystals
 
-function won(){
-    wins++;
-    alert("You won!");
-    $("#wins").text(wins);
-    restart();
-}
-
-function lost(){
-    losses++;
-    alert("Sorry, you lose! Better luck next time..");
-    $("#losses").text(losses);
-    restart(); 
-}
-
-//Set up clicks for crystals
 $("#cry1").on("click",function(){
-//
+//Adding the crystals random number to the total score
     totalScore = totalScore + image1;
-    $("#scoreDisplay").text(totalScore);
+//Displaying the total score on the screen
+    $("#scoreDisplay").html(totalScore);
 //win and lose conditionals
-    if (totalScore === randomNum){
-        won();
-    }
-    else if (totalScore > randomNum){
-        lost();
-    }
-
-});
-
-$("#cry2").on("click", function(){
-
-    totalScore = totalScore + image2;
-    $("#scoreDisplay").text(totalScore);
-    if (totalScore === randomNum){
-        won();
-    }
-    else if (totalScore > randomNum){
-        lost();
-    }
-
-    })
-
-$("#cry3").on("click", function(){
-    totalScore = totalScore + image3;
-    $("#scoreDisplay").text(totalScore);
-    if (totalScore === randomNum){
-        won();
-    }
-    else if (totalScore > randomNum){
-        lost();
-    }
-
-    })
-
-$("#cry4").on("click", function(){
-    totalScore = totalScore + image4;
-    $("#scoreDisplay").text(totalScore);
     if (totalScore === randomNum){
         won();
     }
@@ -85,6 +56,43 @@ $("#cry4").on("click", function(){
 
     });
 
+$("#cry2").on("click", function(){
+    totalScore = totalScore + image2;
+    $("#scoreDisplay").html(totalScore);
+    if (totalScore === randomNum){
+        won();
+    }
+    else if (totalScore > randomNum){
+        lost();
+    }
+
+    });
+
+$("#cry3").on("click", function(){
+    totalScore = totalScore + image3;
+    $("#scoreDisplay").html(totalScore);
+    if (totalScore === randomNum){
+        won();
+    }
+    else if (totalScore > randomNum){
+        lost();
+    }
+
+    });
+
+$("#cry4").on("click", function(){
+    totalScore = totalScore + image4;
+    $("#scoreDisplay").html(totalScore);
+    if (totalScore === randomNum){
+        won();
+    }
+    else if (totalScore > randomNum){
+        lost();
+    }
+
+    });
+
+    //Restarts the game. 
 function restart(){
     randomNum = Math.floor(Math.random() * 101 + 19)
     $("#randomNum").text(randomNum);
@@ -93,10 +101,8 @@ function restart(){
     image3 = Math.floor(Math.random() * 11 + 1);
     image4 = Math.floor(Math.random() * 11 + 1);  
     scoreDisplay = 0;
-    $("#scoreDisplay").text(scoreDisplay);
+    $("#scoreDisplay").html(scoreDisplay);
     totalScore = 0;
-    }
-
-
+    };
 
 }); 
