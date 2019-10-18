@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Overpass|Philosopher&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
 
     <title>Crystal Game</title>
 </head>
@@ -30,10 +30,10 @@
                 <br>
                 <p>You will be given a random number at the start of the game. "Number to Guess"</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-                    to your total score</p>
+                    to your total score.</p>
                 <p>You will win the game by matching your total score to the random number, you lose the game if
                     your total score goes  above the random number. </p>
-                <p>The value of each crytal is hidden from you until you click on it,</p>
+                <p>The value of each crytal is hidden from you until you click on it.</p>
                 <p>When the game restarts, the value of the crystals will change.</p>
             </div>
         </div>
@@ -43,16 +43,16 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <h6 class="mt-3">Number to guess: 
+                        <h6 class="mt-5 guess">Number to guess: 
                         </h6>
-                        <div id="randomNum" class="mb-3"></div>
+                        <div id="randomNum" class="mb-4"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="score">
-                            <h6>Your total score is: 
-                                <div class="totalScore" class="mb-3"></div>
+                            <h6 class= "guess">Your total score is: 
+                                <div class="totalScore" class="mb-5"></div>
                             </h6>
                             <div id="scoreDisplay"></div>
 
@@ -63,34 +63,34 @@
             <div class="col-md-6">
                 <div class= "row">
                     <div class = "col-md-12">
-                        <h6 class="mt-3"> Wins: 
+                        <h6 class="mt-5 guess"> Wins: 
                         </h6>   
-                        <div id="wins" class="mb-3"></div>
+                        <div id="wins" class="mb-4"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h6>Losses: 
+                        <h6 class="guess">Losses: 
                         </h6>
-                        <div id="losses" class="mb-3"></div>
+                        <div id="losses" class="mb-5"></div>
                     </div>
                 </div>
             </div>
         </div>    
         <br>
-
-                    <div class="row pb-5">
+                
+                    <div class="row pb-4 pl-5 pt-4 images">
 
                         <div class="col-lg-3">
                             <img id="cry1" src="assets/images/crystal-11.png" alt="crystal1">
                         </div>
 
                         <div class="col-lg-3">
-                            <img id="cry2" src="assets/images/crystal-10.png" alt="crystal2">
+                            <img id="cry2"  src="assets/images/crystal-10.png" alt="crystal2">
                         </div>
 
                         <div class="col-lg-3">
-                            <img id="cry3" src="assets/images/crystal-7.png" alt="crystal3">
+                            <img id="cry3"  src="assets/images/crystal-7.png" alt="crystal3">
                         </div>
 
                         <div class="col-lg-3">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
 
-                    <footer>
+                    <footer class="pt-5 pb-3">
                         <p> &copy Copyright 2019 | Shelby Reinsimar | Github </p>
                     </footer>
 
@@ -114,7 +114,8 @@
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                         crossorigin="anonymous"></script>
-                </div>
+    </div>
+    
 </body>
 
 </html>
