@@ -3,16 +3,20 @@ body {
     
 }
 
-h1, p{
+h1, p, div{
     color: #ffffff;
+    font-size: 1em;
+}
+.header{
+    font-family: 'Philosopher', sans-serif;
+    
+}
+
+#instructions{
+    font-family: 'Overpass', sans-serif;
 }
 
 img{
     width: 100px;
     height: 100px
-}
-
-#instructions{
-    background: goldenrod;
-    border: solid goldenrod;
 }
