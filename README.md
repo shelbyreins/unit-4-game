@@ -4,13 +4,15 @@
 
 https://shelbyreins.github.io/unit-4-game/
 
-### Description on how to use
+## Description on how to use
 
-- You will be given a random number "Number to Guess" at the start of the game. 
+- You will be given a random number "Number to guess" at the start of the game. 
 - There are four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.
 - You will win the game by matching your total score to the random number, you lose the game if your total score goes  above the random number. 
 - The value of each crytal is hidden from you until you click on it.
 - When the game restarts, the value of the crystals will change.
+
+<img src ="assets/images/CrystalGame.gif" width="400px"/>
 
 ### Game Design Notes
 
@@ -31,4 +33,3 @@ https://shelbyreins.github.io/unit-4-game/
  Credit for crystal images: https://transparentgems.tumblr.com/
 
 
-<img src ="assets/images/CrystalGame.gif" width="400px"/>
