@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Overpass|Philosopher&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Asap|EB+Garamond|Maven+Pro|Merriweather+Sans|Philosopher&display=swap" rel="stylesheet">
+    
     <title>Crystal Game</title>
 </head>
 
@@ -19,15 +18,15 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1 class="header pt-4 pb-4">Crystal Collector Game!</h1>
+                <h1 class="header pt-3 pb-2">Crystal Collector Game!</h1>
             </div>
         </div>
         <br>
 
         <div class="row">
-            <div class="col-md-12 instructions p-5">
-                <h2 id="instructions-title"> Instructions:</h2>
-                <br>
+            <div class="col-md-12 instructions pt-4 pb-4 pl-5 pr-5">
+                <h2 id="instructions-title" class="pb-4"> Instructions:</h2>
+                
                 <p>You will be given a random number at the start of the game. "Number to Guess"</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
                     to your total score.</p>
@@ -43,17 +42,17 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <h6 class="mt-5 guess">Number to guess: 
-                        </h6>
+                        <p class="mt-5 guess">Number to guess: 
+                        </p>
                         <div id="randomNum" class="mb-4"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="score">
-                            <h6 class= "guess">Your total score is: 
+                            <p class= "guess">Your total score is: 
                                 <div class="totalScore" class="mb-5"></div>
-                            </h6>
+                            </p>
                             <div id="scoreDisplay"></div>
 
                         </div>
@@ -63,15 +62,15 @@
             <div class="col-md-6">
                 <div class= "row">
                     <div class = "col-md-12">
-                        <h6 class="mt-5 guess"> Wins: 
-                        </h6>   
+                        <p class="mt-5 guess"> Wins: 
+                        </p>   
                         <div id="wins" class="mb-4"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h6 class="guess">Losses: 
-                        </h6>
+                        <p class="guess">Losses: 
+                        </p>
                         <div id="losses" class="mb-5"></div>
                     </div>
                 </div>
@@ -98,8 +97,8 @@
                         </div>
                     </div>
 
-                    <footer class="pt-5 pb-3">
-                        <p> &copy Copyright 2019 | Shelby Reinsimar | Github </p>
+                    <footer class="pt-3 pb-2">
+                        <p> &copy Copyright 2019 | Shelby Reinsimar | <a href="https://github.com/shelbyreins" target="_blank" id="github">GitHub</a> </p>
                     </footer>
 
 
