@@ -38,7 +38,6 @@ $("#cry1").on("click",function(){
 //
     totalScore = totalScore + image1;
     $("#scoreDisplay").text(totalScore);
-    console.log(totalScore);
 //win and lose conditionals
     if (totalScore === randomNum){
         won();
@@ -53,7 +52,6 @@ $("#cry2").on("click", function(){
 
     totalScore = totalScore + image2;
     $("#scoreDisplay").text(totalScore);
-    console.log(totalScore);
     if (totalScore === randomNum){
         won();
     }
@@ -66,7 +64,6 @@ $("#cry2").on("click", function(){
 $("#cry3").on("click", function(){
     totalScore = totalScore + image3;
     $("#scoreDisplay").text(totalScore);
-    console.log(totalScore);
     if (totalScore === randomNum){
         won();
     }
@@ -79,7 +76,6 @@ $("#cry3").on("click", function(){
 $("#cry4").on("click", function(){
     totalScore = totalScore + image4;
     $("#scoreDisplay").text(totalScore);
-    console.log(totalScore);
     if (totalScore === randomNum){
         won();
     }
