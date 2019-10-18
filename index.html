@@ -8,37 +8,44 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Philosopher&display=swap" rel="stylesheet">
 
 
-
-    <title>Psychic Game</title>
+    <title>Crystal Game</title>
 </head>
 
 <body>
     <div class="container">
-        <h1 class="header">Crystal Game</h1><br>
-
-        
-        <div class="card" style="width: 18em;">
-            <div class="card-body" id="instructions">
-                 <div class="card-text">                    
-                    <p>You will be given a random number at the start of the game.</p>
-                    <p>There are four crystals below. By clicking on a crystal you <br> will add a specific amount of points to your total score</p>
-                    <p>You will win the game by matching your total score to the <br> random number, you lose the game if your total score goes <br> above the random number. </p>
-                    <p>The value of each crytal is hidden from you until you click on it,</p>
-                    <p>When the game restarts, the value of the crystals will change.</p>
-                 </div>
+        <div class= "row">
+            <div class= "col-md-12">
+                <h1 class="header pt-3">Crystal Collector</h1>
             </div>
         </div>
+        
+
+            <div  id="instructions">
+                <h4 class="pt-4"> Instructions:</h4>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you <br> will add a specific amount of points to your total score</p>
+                <p>You will win the game by matching your total score to the <br> random number, you lose the game if your total score goes <br> above the random number. </p>
+                <p>The value of each crytal is hidden from you until you click on it,</p>
+                <p>When the game restarts, the value of the crystals will change.</p>
+            </div>
+         
 
 
- 
-
-        <div id="randomNum"></div>
+        <div id = "num" class="pt-3">
+        <p>Number to guess:
+            <div id="randomNum" ></div>
+        </p>
+        </div>
 
         <div class="totals">
-            <p id="win"> Wins: </p>
-            <p id="losses">Losses: </p>
+            <p class= "pt-3"> Wins: <div  id="wins"></div>   
+            </p>
+
+            <p class= "pt-3">Losses: <div id="losses" class="pb-3"></div>
+             </p>
         </div>
 
 
@@ -63,13 +70,16 @@
 
         </div>
 
-        <div class="totalScore">
-            <p>Your total score is: </p>
-        </div>
+       
+        <div class= "score pt-4">
+        <p>Your total score is:
+                <div class="totalScore"></div>
+         </p>
 
-        <div class="scoreDisplay"> </div>
+         <div id="scoreDisplay" class= "pb-5"> 
 
-
+         </div>
+        </div>         
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/game.js"></script>
