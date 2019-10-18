@@ -1,5 +1,5 @@
 body {
-    background: url("../images/zwartevilt/zwartevilt.png");
+    background: url("../images/dark-grey-terrazzo/dark-grey-terrazzo.png");
 }
  
 
@@ -14,35 +14,42 @@ body {
 }
 
 .middle{
-    background: rgba(161, 153, 153, 0.5);
+    background: rgba(95, 91, 91, 0.9);
     border-radius: 25px;
     text-align: center;
 }
 
 .guess{
-    color: #ffffff;
+    color:  #ffffff;
     font-size: 1.7em;
-    font-family: Arial, Helvetica, sans-serif;
- 
+    font-family: 'Merriweather Sans', sans-serif;
+    /* font-family: 'Asap', sans-serif; */
+    font-weight:400;
 }
 
 #scoreDisplay, #randomNum, #wins, #losses{
     font-family: 'Maven Pro', sans-serif;
-    color: #ffffff;
-    font-size: 1.5em;
+    color:#ffffff;
+    font-size: 1.6em;
+    font-weight: bolder;
+    
 }
 
 .instructions{
-    font-family: 'Times New Roman', Times, serif;
-    background: rgba(161, 153, 153, 0.5);
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    background: rgba(95, 91, 91, 0.9);
     border-radius: 25px;
-    font-size: 1.4em;
-    color: #ffffff;
+    font-size: 1.6em;
+    color:#ffffff;
+    
 }
 
 #instructions-title{
-    color: #ffffff;
-    font-size: 1.8em;
+    color:#ffffff;
+    font-family: 'EB Garamond', serif;
+    font-size: 2.3em;
+    /* font-weight: bold; */
 }
 
 img{
@@ -53,7 +60,7 @@ img{
 }
 
 .images{
-    background: rgba(161, 153, 153, 0.5);
+    background: rgba(95, 91, 91, 0.9);
     border-radius: 25px;
     text-align: center;
 }
@@ -62,4 +69,15 @@ footer{
     text-align: center;
     color: #ffffff;
     font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#github{
+    color: #ffffff;
+}
+
+#github:hover{
+    color: #ffffff;
+    text-decoration: none;
 }
