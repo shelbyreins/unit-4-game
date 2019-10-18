@@ -16,83 +16,105 @@
 
 <body>
     <div class="container">
-        <div class= "row">
-            <div class= "col-md-12">
-                <h1 class="header pt-3">Crystal Collector</h1>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="header pt-4 pb-4">Crystal Collector Game!</h1>
             </div>
         </div>
-        
+        <br>
 
-            <div  id="instructions">
-                <h4 class="pt-4"> Instructions:</h4>
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. By clicking on a crystal you <br> will add a specific amount of points to your total score</p>
-                <p>You will win the game by matching your total score to the <br> random number, you lose the game if your total score goes <br> above the random number. </p>
+        <div class="row">
+            <div class="col-md-12 instructions p-5">
+                <h2 id="instructions-title"> Instructions:</h2>
+                <br>
+                <p>You will be given a random number at the start of the game. "Number to Guess"</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                    to your total score</p>
+                <p>You will win the game by matching your total score to the random number, you lose the game if
+                    your total score goes  above the random number. </p>
                 <p>The value of each crytal is hidden from you until you click on it,</p>
                 <p>When the game restarts, the value of the crystals will change.</p>
             </div>
-         
-
-
-        <div id = "num" class="pt-3">
-        <p>Number to guess:
-            <div id="randomNum" ></div>
-        </p>
         </div>
+        <br>
 
-        <div class="totals">
-            <p class= "pt-3"> Wins: <div  id="wins"></div>   
-            </p>
+        <div class="row middle">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="mt-3">Number to guess: 
+                        </h6>
+                        <div id="randomNum" class="mb-3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="score">
+                            <h6>Your total score is: 
+                                <div class="totalScore" class="mb-3"></div>
+                            </h6>
+                            <div id="scoreDisplay"></div>
 
-            <p class= "pt-3">Losses: <div id="losses" class="pb-3"></div>
-             </p>
-        </div>
-
-
-        <div class="row">
-
-            <div class="col-md-3">
-                <img id="cry1" src="assets/images/crystal-11.png" alt="crystal1">
+                        </div>
+                    </div> 
+                </div> 
             </div>
-
-            <div class="col-md-3">
-                <img id="cry2"  src="assets/images/crystal-10.png" alt="crystal2">
+            <div class="col-md-6">
+                <div class= "row">
+                    <div class = "col-md-12">
+                        <h6 class="mt-3"> Wins: 
+                        </h6>   
+                        <div id="wins" class="mb-3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6>Losses: 
+                        </h6>
+                        <div id="losses" class="mb-3"></div>
+                    </div>
+                </div>
             </div>
+        </div>    
+        <br>
 
-            <div class="col-md-3">
-                <img id="cry3"  src="assets/images/crystal-7.png" alt="crystal3">
-            </div>
+                    <div class="row pb-5">
 
-            <div class="col-md-3">
-                <img id="cry4"  src="assets/images/crystal-9.png" alt="crystal4">
-            </div>
+                        <div class="col-lg-3">
+                            <img id="cry1" src="assets/images/crystal-11.png" alt="crystal1">
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img id="cry2" src="assets/images/crystal-10.png" alt="crystal2">
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img id="cry3" src="assets/images/crystal-7.png" alt="crystal3">
+                        </div>
+
+                        <div class="col-lg-3">
+                            <img id="cry4" src="assets/images/crystal-9.png" alt="crystal4">
+                        </div>
+                    </div>
+
+                    <footer>
+                        <p> &copy Copyright 2019 | Shelby Reinsimar | Github </p>
+                    </footer>
 
 
-        </div>
-
-       
-        <div class= "score pt-4">
-        <p>Your total score is:
-                <div class="totalScore"></div>
-         </p>
-
-         <div id="scoreDisplay" class= "pb-5"> 
-
-         </div>
-        </div>         
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/game.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="assets/javascript/game.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                        crossorigin="anonymous"></script>
+                </div>
 </body>
 
 </html>

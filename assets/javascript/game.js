@@ -10,19 +10,14 @@ var randomNum = Math.floor(Math.random() * 101 + 19);
 $("#randomNum").text(randomNum);
 
 //Randoms numbers for each crystal between 1 - 12
-
 var image1 = Math.floor(Math.random() * 11 + 1);
 var image2 = Math.floor(Math.random() * 11 + 1);
 var image3 = Math.floor(Math.random() * 11 + 1);
 var image4 = Math.floor(Math.random() * 11 + 1);
 
-
-
-
 $("#wins").text(wins);
 $("#losses").text(losses);
 $("#scoreDisplay").text(scoreDisplay);
-
 
 function won(){
     wins++;
@@ -31,22 +26,20 @@ function won(){
     restart();
 }
 
-
 function lost(){
     losses++;
     alert("Sorry, you lose! Better luck next time..");
     $("#losses").text(losses);
-    restart();
-    
+    restart(); 
 }
 
 //Set up clicks for crystals
-
 $("#cry1").on("click",function(){
+//
     totalScore = totalScore + image1;
     $("#scoreDisplay").text(totalScore);
     console.log(totalScore);
-//win/lose conditionals
+//win and lose conditionals
     if (totalScore === randomNum){
         won();
     }
@@ -54,7 +47,7 @@ $("#cry1").on("click",function(){
         lost();
     }
 
-    })
+});
 
 $("#cry2").on("click", function(){
 
