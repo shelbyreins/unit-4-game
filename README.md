@@ -31,4 +31,4 @@ https://shelbyreins.github.io/unit-4-game/
  Credit for crystal images: https://transparentgems.tumblr.com/
 
 
-<img src = "" width="400px"/>
+<img src ="assets/images/CrystalGame.gif" width="400px"/>
