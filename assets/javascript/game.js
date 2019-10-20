@@ -68,7 +68,6 @@ $(document).on("click", "#cry1", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
     totalScore= totalScore+ value;
-    console.log(this);
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -82,7 +81,6 @@ $(document).on("click", "#cry2", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
     totalScore= totalScore+ value;
-    console.log(this);
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -95,7 +93,6 @@ $(document).on("click", "#cry3", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
     totalScore= totalScore+ value;
-    console.log(this);
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -108,7 +105,6 @@ $(document).on("click", "#cry4", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
     totalScore= totalScore+ value;
-    console.log(this);
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -117,20 +113,6 @@ $(document).on("click", "#cry4", function(){
         lost();
     }
 })
-
-//Set up clicks for 4 crystals
-
-// $("#cry1").on("click",function(){
-    // totalScore = totalScore + image1;
-    // $("#scoreDisplay").html(totalScore);
-//     if (totalScore === randomNum){
-//         won();
-//     }
-//     else if (totalScore > randomNum){
-//         lost();
-//     }
-
-//     });
 
     //Restarts the game. 
 function restart(){
