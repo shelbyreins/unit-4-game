@@ -67,7 +67,7 @@ $(".images").append(crystalFourImg);
 $(document).on("click", "#cry1", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
-    totalScore= totalScore+ value;
+    totalScore= totalScore+ image1;
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -80,7 +80,7 @@ $(document).on("click", "#cry1", function(){
 $(document).on("click", "#cry2", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
-    totalScore= totalScore+ value;
+    totalScore= totalScore+ image2;
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -92,7 +92,7 @@ $(document).on("click", "#cry2", function(){
 $(document).on("click", "#cry3", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
-    totalScore= totalScore+ value;
+    totalScore= totalScore+ image3;
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
@@ -104,7 +104,7 @@ $(document).on("click", "#cry3", function(){
 $(document).on("click", "#cry4", function(){
     var value = ($(this).attr("data-value"));
     value = parseInt(value);
-    totalScore= totalScore+ value;
+    totalScore= totalScore+ image4;
     $("#scoreDisplay").html(totalScore);
     if (totalScore === randomNum){
         won();
